@@ -21,14 +21,14 @@ jobs:
         uses: Banaanae/Action-Ahk2Exe@main
         with:
             in: |
-              QuickConvertorV2.exe
-              v2converter.exe
-              Converter_UI.exe
+              QuickConvertorV2.ahk
+              v2converter.ahk
+              Converter_UI.ahk
           
       - name: Release # Upload binary to most recent release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-              QuickConvertorV2.ahk
-              v2converter.ahk
-              Converter_UI.ahk
+              QuickConvertorV2.exe
+              v2converter.exe
+              Converter_UI.exe
